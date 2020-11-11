@@ -1,7 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4130c385-2e75-4e94-96e9-e2c716e90be3" name="Default Changelist" comment="" />
+    <list default="true" id="4130c385-2e75-4e94-96e9-e2c716e90be3" name="Default Changelist" comment="login con ajax">
+      <change afterPath="$PROJECT_DIR$/model/Menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/conn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/subMenu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/avatar/Avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/icons/mCSB_buttons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/img/nav-font.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/bootstrap-material-design.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/jquery.mCustomScrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/sweetalert2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/bootstrap-material-design.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/sweetalert2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/plugins/sweetalert2/sweetalert2.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/plugins/sweetalert2/sweetalert2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/roboto-medium-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/roboto-medium-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/robotocondensed-light-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/robotocondensed-light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/robotocondensed-light-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/robotocondensed-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/webfonts/robotocondensed-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/inicio/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/facturacion-electronica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/facturacion-electronica.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/conexion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/plugins/sweetalert2/sweetalert2.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/plugins/sweetalert2/sweetalert2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/css/estilos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/fonts/icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/fonts/icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/fonts/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/fonts/icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/img/contabilidad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/img/dragon-logo-png-5-Transparent-Images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/jquery/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/popper/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/codigo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +113,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,12 +125,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\facturacion-electronica\controller" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\template" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\facturacion-electronica\app\views\login" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\app\plugins" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\resources" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\model" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources\bootstrap" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\app\views\dashboard" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -51,7 +146,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604765865795</updated>
-      <workItem from="1604765866830" duration="6749000" />
+      <workItem from="1604765866830" duration="7708000" />
+      <workItem from="1604774454247" duration="12203000" />
+      <workItem from="1604806206208" duration="3553000" />
+      <workItem from="1604910518619" duration="2876000" />
+      <workItem from="1604968645788" duration="795000" />
+      <workItem from="1604973078690" duration="662000" />
+      <workItem from="1604978390863" duration="33000" />
+      <workItem from="1604978429468" duration="24640000" />
+      <workItem from="1605044788597" duration="19504000" />
     </task>
     <task id="LOCAL-00001" summary="login con ajax">
       <created>1604772590258</created>
@@ -60,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604772590258</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="login con ajax">
+      <created>1604772797108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604772797108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,33 +193,56 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1604772623794" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1604772587146">
+    <state x="453" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604991366306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604772587146" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1604772452091">
+    <state x="453" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1604991366306" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1604792986813">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604772452091" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604792986813" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1604978425349">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604978425349" />
     <state x="507" y="284" key="Github.CreateGistDialog" timestamp="1604772369557">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="284" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1604772369557" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1604771150141">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605003146193">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604771150141" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605003146193" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1604769098709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1604769098709" />
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604772636097">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604792964801">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1604772636097" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604792964801" />
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604792978602">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1604792978602" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1604770915010">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604770915010" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604989565030">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604989565030" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/model/Menu.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
