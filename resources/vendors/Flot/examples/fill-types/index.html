@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Flot Examples: Area Fill Types</title>
+	<link href="../examples.css" rel="stylesheet" type="text/css">
+	<script language="javascript" src="../../source/jquery.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.canvaswrapper.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.colorhelpers.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.saturated.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.browser.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.drawSeries.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.errorbars.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.uiConstants.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.logaxis.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.symbol.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.flatdata.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.navigate.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.fillbetween.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.stack.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.touchNavigate.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.hover.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.touch.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.time.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.axislabels.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.selection.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.composeImages.js" type="text/javascript"></script>
+	<script language="javascript" src="../../source/jquery.flot.legend.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+	$(function() {
+
+		var d1 = [];
+		for (var i = 0; i < 14; i += 0.5) {
+			d1.push([i, 5 + Math.cos(i)]);
+		}
+
+		var d2 = [];
+
+		for (var i = 0; i < 14; i += 0.5) {
+			d2.push([i, Math.sin(i)]);
+		}
+
+		var d3 = [];
+		for (var i = 0; i < 14; i += 0.5) {
+			d3.push([i, -5 - Math.cos(i), -8 - Math.sin(i)]);
+		}
+
+		var d4 = [];
+		for (var i = 0; i < 14; i += 0.5) {
+			d4.push([i, -10 - Math.cos(i)]);
+		}
+
+
+		$.plot("#placeholder", [{
+				label: "Fill towards Infinity",
+				data: d1,
+				lines: { show: true, fill: true, zero: false, fillTowards: Infinity }
+			}, {
+				label: "Fill towards zero",
+				data: d2,
+				lines: { show: true, fill: true, zero: false }
+			}, {
+				label: "Fill between",
+				data: d3,
+				lines: { show: true,  lineWidth: 0, fill: true, zero: false }
+			}, {
+				label: "Fill towards -Infinity",
+				data: d4,
+				lines: { show: true, fill: true, zero: false, fillTowards: -Infinity }
+			}]
+		);
+
+		// Add the Flot version string to the footer
+
+		$("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
+	});
+
+	</script>
+</head>
+<body>
+
+	<div id="header">
+		<h2>Area Fill Types</h2>
+	</div>
+
+	<div id="content">
+
+		<div class="demo-container">
+			<div class="demo-placeholder" id="placeholder"></div>
+		</div>
+
+		<p>flot supports area fills towards 0, -Infinity, +Infinity or arbitrary values. An option is to fill "bands" between provided values.
+		To do that you need to provide the second y value to the plot</p>
+
+	</div>
+
+	<div id="footer">
+		Copyright &copy; 2007 - 2014 IOLA and Ole Laursen
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+---
+title: "Mini app : Downloader"
+layout: default
+section: example
+---
+
+<p>Tip : check the source of the page !</p>
+
+<p>
+  This mini application let you choose the files you want in a list, download
+  them, zip them and give the result to the user.
+</p>
+<p>
+  This demo requires a recent browser, see <a href="{{site.baseurl}}/documentation/howto/write_zip.html">
+  the howto</a>.
+</p>
+
+
+
+<div id="downloader_application">
+  <h3>Please select your files</h3>
+  <form action="#" id="download_form">
+  <ul>
+    <li>
+      <label>
+        <input checked data-url="{{site.baseurl}}/test/ref/complex_files/Franz Kafka - The Metamorphosis.epub" type="checkbox" />
+        Franz Kafka - The Metamorphosis.epub
+      </label>
+    </li>
+    <li>
+      <label>
+        <input checked data-url="{{site.baseurl}}/documentation/css/pygments.css" type="checkbox" />
+        pygments.css
+      </label>
+    </li>
+    <li>
+      <label>
+        <input data-url="{{site.baseurl}}/dist/jszip.js" type="checkbox" />
+        jszip.js
+      </label>
+    </li>
+    <li>
+      <label>
+        <input data-url="{{site.baseurl}}/test/ref/all.zip" type="checkbox" />
+        all.zip
+      </label>
+    </li>
+  </ul>
+
+  <button class="btn btn-primary" type="submit">pack them !</button>
+</form>
+
+<p class="hide" id="result"></p>
+
+
+</div>
+
+<script src="{{site.baseurl}}/documentation/examples/downloader.js" type="text/javascript"></script>
