@@ -1,24 +1,17 @@
 <?php
 include '../../model/conexion.php';
 
-
-
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <link rel="icon" href="images/favicon.ico" type="image/ico"/>
 
     <title>Gentelella Alela! | </title>
 
@@ -46,9 +39,9 @@ include '../../model/conexion.php';
 $ob = new Conectar();
 $co = $ob->Conexion();
 $usuario = $_SESSION['s_usuario'];
-if($usuario == null){
+if ($usuario == null) {
     header("Location: ../login/index.php");
-}else {
+} else {
 
     $sql = "select * from tbl_usuario INNER JOIN tbl_rol ON USU_USUARIO='$usuario'";
     $query = $co->prepare($sql);
@@ -63,18 +56,13 @@ if($usuario == null){
         $imgen = $res['USU_IMAGEN'];
 
 
-
     }
-
 
 
     $sql = "select * from tbl_menu where RO_ID='$rol_id'";
     $query = $co->prepare($sql);
     $query->execute();
-    $result= $query->fetchAll();
-
-
-
+    $result = $query->fetchAll();
 
 
 }
@@ -102,7 +90,7 @@ if($usuario == null){
                 </div>
                 <!-- /menu profile quick info -->
 
-                <br />
+                <br/>
 
                 <!-- sidebar menu -->
                 <!-- Aqui obtenemos el menu y el sub menu a travez del modelo -->
@@ -111,18 +99,21 @@ if($usuario == null){
                     <div class="menu_section">
                         <h3>General</h3>
                         <ul class="nav side-menu">
-                            <li><a href="../inicio/home.php"><i class="fa fa-home" ></i> Inicio <span class="fa fa-chevron active"></span></a>
-                            <?php
-                            foreach ($result as $res) {
+                            <li><a href="../inicio/home.php"><i class="fa fa-home"></i> Inicio <span
+                                            class="fa fa-chevron active"></span></a>
+                                <?php
+                                foreach ($result
+
+                                as $res) {
                                 $me_nombre = $res['ME_DESCRIPCION'];
                                 $me_icon = $res['ME_ICONO'];
                                 $me_id = $res ['ME_ID'];
 
 
+                                ?>
 
-                            ?>
-
-                            <li><a><i class="<?php echo $me_icon?>"></i><?php echo $me_nombre?><span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="<?php echo $me_icon ?>"></i><?php echo $me_nombre ?><span
+                                            class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
 
                                     <?php
@@ -131,23 +122,24 @@ if($usuario == null){
                                     $query->execute();
                                     $result2 = $query->fetchAll();
                                     foreach ($result2 as $res2) {
-                                    $subme_url = $res2['SUB_URL'];
-                                    $subme_nombre = $res2['SUB_DESCRIPCION'];
+                                        $subme_url = $res2['SUB_URL'];
+                                        $subme_nombre = $res2['SUB_DESCRIPCION'];
 
 
-                                    ?>
-                                    <li><a href="<?php echo $subme_url?>"><?php echo $subme_nombre?></a></li>
+                                        ?>
+                                        <li><a href="<?php echo $subme_url ?>"><?php echo $subme_nombre ?></a></li>
 
-                                    <?php  } ?>
+                                    <?php } ?>
                                 </ul>
-                            <?php  } ?>
+                                <?php } ?>
 
                     </div>
                     <div class="menu_section">
                         <h3>Live On</h3>
                         <ul class="nav side-menu">
-                             <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
-                               <ul class="nav child_menu">
+                            <li><a><i class="fa fa-bug"></i> Additional Pages <span
+                                            class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
                                     <li><a href="e_commerce.html">E-commerce</a></li>
                                     <li><a href="projects.html">Projects</a></li>
                                     <li><a href="project_detail.html">Project Detail</a></li>
@@ -165,7 +157,8 @@ if($usuario == null){
                                     <li><a href="pricing_tables.html">Pricing Tables</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span
+                                            class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="#level1_1">Level One</a>
                                     <li><a>Level One<span class="fa fa-chevron-down"></span></a>
@@ -182,7 +175,8 @@ if($usuario == null){
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span
+                                            class="label label-success pull-right">Coming Soon</span></a></li>
                         </ul>
                     </div>
 
@@ -217,29 +211,33 @@ if($usuario == null){
                 <nav class="nav navbar-nav">
                     <ul class=" navbar-right">
                         <li class="nav-item dropdown open" style="padding-left: 15px;">
-                            <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true"
+                               id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
                                 <img src="<?php echo $imgen; ?>" alt=""><?php echo $nombre . ' ' . $apellidoP; ?>
                             </a>
                             <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item"  href="javascript:;"> Profile</a>
-                                <a class="dropdown-item"  href="javascript:;">
+                                <a class="dropdown-item" href="javascript:;"> Profile</a>
+                                <a class="dropdown-item" href="javascript:;">
                                     <span class="badge bg-red pull-right">50%</span>
                                     <span>Settings</span>
                                 </a>
-                                <a class="dropdown-item"  href="javascript:;">Help</a>
-                                <a class="dropdown-item"  href="../../controller/logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                <a class="dropdown-item" href="javascript:;">Help</a>
+                                <a class="dropdown-item" href="../../controller/logout.php"><i
+                                            class="fa fa-sign-out pull-right"></i> Log Out</a>
                             </div>
                         </li>
 
                         <li role="presentation" class="nav-item dropdown open">
-                            <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                            <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1"
+                               data-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-envelope-o"></i>
                                 <span class="badge bg-green">6</span>
                             </a>
-                            <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                            <ul class="dropdown-menu list-unstyled msg_list" role="menu"
+                                aria-labelledby="navbarDropdown1">
                                 <li class="nav-item">
                                     <a class="dropdown-item">
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -251,7 +249,7 @@ if($usuario == null){
                                 </li>
                                 <li class="nav-item">
                                     <a class="dropdown-item">
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -263,7 +261,7 @@ if($usuario == null){
                                 </li>
                                 <li class="nav-item">
                                     <a class="dropdown-item">
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -275,7 +273,7 @@ if($usuario == null){
                                 </li>
                                 <li class="nav-item">
                                     <a class="dropdown-item">
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image"/></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -307,6 +305,6 @@ if($usuario == null){
 
             <!-- /top tiles -->
 
-        <!-- /page content -->
+            <!-- /page content -->
 
-        <!-- footer content -->
+            <!-- footer content -->
