@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4130c385-2e75-4e94-96e9-e2c716e90be3" name="Default Changelist" comment="menu dinamico v2">
-      <change afterPath="$PROJECT_DIR$/views/clientes/agregar_clientes.php" afterDir="false" />
+    <list default="true" id="4130c385-2e75-4e94-96e9-e2c716e90be3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/assets/img/27103.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/perfil/cambiar_password.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgen/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/archive/imgen/user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/contabilidad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/img/contabilidad.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/clientes/añadir_clientes.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,22 +42,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\facturacion-electronica\controller" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\template" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\facturacion-electronica\resources" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\model" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources\bootstrap" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\app\views\dashboard" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\facturacion-electronica\archive" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\resources\assets\img" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\controller" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\template" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\app\resources" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +81,8 @@
       <workItem from="1605099461458" duration="1086000" />
       <workItem from="1605134689512" duration="747000" />
       <workItem from="1605136142964" duration="141000" />
-      <workItem from="1605137543470" duration="1617000" />
+      <workItem from="1605137543470" duration="5046000" />
+      <workItem from="1605158345854" duration="13156000" />
     </task>
     <task id="LOCAL-00001" summary="login con ajax">
       <created>1604772590258</created>
@@ -111,7 +119,35 @@
       <option name="project" value="LOCAL" />
       <updated>1605080461569</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cambio de nombre en el archivo">
+      <created>1605139233689</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605139233690</updated>
+    </task>
+    <task id="LOCAL-00007" summary="menu dinamico v2">
+      <created>1605139250653</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605139250653</updated>
+    </task>
+    <task id="LOCAL-00008" summary="menu dinamico v2">
+      <created>1605139265406</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605139265406</updated>
+    </task>
+    <task id="LOCAL-00009" summary="menu dinamico v2">
+      <created>1605139274005</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605139274005</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +157,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="login con ajax" />
     <MESSAGE value="menu dinamico v1" />
+    <MESSAGE value="cambio de nombre en el archivo" />
     <MESSAGE value="menu dinamico v2" />
     <option name="LAST_COMMIT_MESSAGE" value="menu dinamico v2" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -142,10 +179,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1604991366306" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1605099918105">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1605139272323">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605099918105" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605139272323" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1604978425349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -154,22 +191,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="284" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1604772369557" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605003146193">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605166388851">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605003146193" />
-    <state x="126" y="0" width="998" height="708" key="SettingsEditor" timestamp="1605138579114">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605166388851" />
+    <state x="169" y="13" width="998" height="708" key="SettingsEditor" timestamp="1605164852464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="126" y="0" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605138579114" />
+    <state x="169" y="13" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605164852464" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1604769098709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1604769098709" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604792964801">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605139332046">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604792964801" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605139332046" />
     <state x="500" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605080384369">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -186,16 +223,5 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604989565030" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/model/Menu.php</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

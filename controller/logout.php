@@ -1,9 +1,11 @@
-<?php
+    <?php
 
-session_start();
-unset($_SESSION["s_usuario"]);
-session_destroy();
-header("Location:../views/login/index.php");
+    session_start();
+    //Limpiamos la sesion
+    header("Location:../views/login/index.php");
+    $_SESSION['s_usuario'] = "";
+
+
 
 
 
