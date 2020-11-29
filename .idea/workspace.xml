@@ -126,7 +126,7 @@
       <workItem from="1606410289314" duration="19496000" />
       <workItem from="1606438743858" duration="15724000" />
       <workItem from="1606512656442" duration="6426000" />
-      <workItem from="1606628433675" duration="242000" />
+      <workItem from="1606628433675" duration="562000" />
     </task>
     <task id="LOCAL-00001" summary="login con ajax">
       <created>1604772590258</created>
@@ -233,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606628706863</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="creacion de selet y tranajando en usuarios">
+      <created>1606628714981</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606628714981</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,10 +291,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1606327366540" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1605182268189">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1606628713564">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605182268189" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606628713564" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1605992826529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -308,10 +315,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1605481968455" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605139332046">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606628904195">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605139332046" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606628904195" />
     <state x="500" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605080384369">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -320,6 +327,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1605186107758" />
+    <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606628890510">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606628890510" />
     <state x="504" y="133" key="refactoring.ChangeSignatureDialog" timestamp="1606331961644">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
