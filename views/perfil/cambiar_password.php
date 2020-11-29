@@ -8,7 +8,6 @@
             <h3><a><i class="fa fa-gear"></i> Ajustes</a></h3>
         </div>
 
-
     </div>
     <div class="clearfix"></div>
     <div class="row">
@@ -54,10 +53,7 @@
                         <div class="item form-group">
                             <div class="col-md-6 col-sm-6 offset-md-3">
 
-                                <button type="submit" class="  btn btn-success "><i class="fa fa-save"
-                                                                                    aria-hidden="true"></i> Cambiar
-                                    Contraseña
-                                </button>
+                                <button type="submit" class="  btn btn-success "><i class="fa fa-save" aria-hidden="true"></i> Cambiar Contraseña</button>
                             </div>
                         </div>
 

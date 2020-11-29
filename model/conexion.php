@@ -1,6 +1,8 @@
 <?php
 class Conectar{
     protected $dbh;
+    public $conexion;
+
     Public function Conexion(){
         define('servidor','localhost');
         define('nombre_bd','facelect');
@@ -23,6 +25,9 @@ class Conectar{
         return $this->dbh->query("SET NAMES 'utf8'");
     }
 
-
+    public function desconectarDB()
+    {
+        die($this->dbh);
+    }
 }
 

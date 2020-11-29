@@ -1,9 +1,9 @@
     <?php
-
+    session_start();
 
     include_once '../model/conexion.php';
 
-    session_start();
+
     $objeto = new Conectar();
     $conexion = $objeto->Conexion();
 
