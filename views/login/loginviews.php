@@ -59,7 +59,9 @@
         </div>
     </div>
 
+<script>
 
+</script>
     <!--=============================================
     =            Include JavaScript files           =
     ==============================================-->
@@ -82,6 +84,6 @@
     <script src="<?php echo SERVERURL ?>resources/js/main.js" ></script>
     <script src="<?php echo SERVERURL ?>resources/plugins/sweetalert2/sweetalert2.all.min.js"></script>
     <script src="<?php echo SERVERURL ?>resources/popper/popper.min.js"></script>
-    <script src="<?php echo SERVERURL ?>views/ajax/codigo.js"></script>
+    <script src="<?php echo SERVERURL ?>views/login/codigo.js"></script>
     </body>
     </html>

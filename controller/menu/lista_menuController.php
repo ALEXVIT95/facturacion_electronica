@@ -19,7 +19,7 @@ foreach ($result as $row) {
     if ( $estado = $row['ME_ESTADO'] == 'A') {
 
         $estado = $row['ME_ESTADO'] = "<span class='badge badge-success'><i class='fa fa-check'></i> Activo</span>";
-    }elseif ($estado = $row['SUB_ESTADO'] == 'I'){
+    }elseif ($estado = $row['ME_ESTADO'] == 'I'){
         $estado = $row['ME_ESTADO'] = "<span class='badge badge-danger'><i class='fa fa-stop-circle'></i> Inactivo</span>";
     }
 

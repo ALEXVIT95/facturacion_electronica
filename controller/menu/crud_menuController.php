@@ -48,10 +48,11 @@ if ($_POST) {
             $nombres = $_POST['Enombres'];
             $icono = $_POST['Eicono'];
             $estado = $_POST['Eestado'];
-            if ( $estado = $_POST['Eestado'] == "<span class='badge badge-success'><i class='fa fa-check'></i> Activo</span>") {
+            if ( $estado = $_POST['Eestado'] == "<span class='badge badge-success'><i class='fa fa-check'></i> Activo</span>"  ) {
 
                 $estado = $_POST['Eestado'] = 'A';
-            }elseif ($estado = $_POST['Eestado'] == "<span class='badge badge-danger'><i class='fa fa-stop-circle'></i> Inactivo</span>"){
+
+            }elseif ($estado = $_POST['Eestado'] == "<span class='badge badge-danger'><i class='fa fa-stop-circle'></i> Inactivo</span>" ){
                 $estado = $_POST['Eestado'] = 'I';
             }
 

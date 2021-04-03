@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4130c385-2e75-4e94-96e9-e2c716e90be3" name="Default Changelist" comment="" />
+    <list default="true" id="4130c385-2e75-4e94-96e9-e2c716e90be3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controller/producto/crud_productoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/producto/listar_productoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/login/codigo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/productos/agregar_productos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/productos/detalle_productos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/productos/editar_productos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/productos/eliminar_productos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/productos/lista_productos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/facturacion-electronica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/facturacion-electronica.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/menu/crud_menuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/menu/crud_menuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/menu/lista_menuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/menu/lista_menuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/usuario/crud_usuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/usuario/crud_usuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/configuracion.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/configuracion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error/page_404.php" beforeDir="false" afterPath="$PROJECT_DIR$/error/page_404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/conexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/conn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ajax/codigo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login/loginviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/loginviews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/menu/editar_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/editar_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/menu/lista_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/lista_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/submenu/agregar_submenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/submenu/agregar_submenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/submenu/editar_submenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/submenu/editar_submenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/submenu/obtener_selectrol.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/submenu/obtener_selectrol.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/usuarios/agregar_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/usuarios/agregar_usuario.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +45,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/controller/producto/crud_productoController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1jyAGySv5oKlvioDAZ4uPuIjLtF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -30,10 +74,12 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/productos" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,30 +89,33 @@
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\facturacion-electronica\resources\js" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\model\submenu" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\views\ajax" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\resources\img" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\views\productos" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\controller\producto" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\controller" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\controller\submenu" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\resources\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\facturacion-electronica\views\login" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\views\ajax" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\controller" />
+      <recent name="C:\xampp\htdocs\facturacion-electronica\controller\login" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\controller\usuario" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\controller\menu" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\views\menu" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\resources\DataTables" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.facturacion-electronica">
     <configuration default="true" type="JavascriptDebugType" uri="http://localhost">
       <method v="2" />
     </configuration>
-    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.100.131/facturacion-electronica/views/login/index.php">
+    <configuration name="facturacion-electronica" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost/facturacion-electronica/">
+      <method v="2" />
+    </configuration>
+    <configuration name="codigo.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/views/login/codigo.js" working-dir="$PROJECT_DIR$/views/login">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.grunt">
@@ -83,11 +132,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.index.php" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -126,7 +170,61 @@
       <workItem from="1606410289314" duration="19496000" />
       <workItem from="1606438743858" duration="15724000" />
       <workItem from="1606512656442" duration="6426000" />
-      <workItem from="1606628433675" duration="562000" />
+      <workItem from="1606628433675" duration="2393000" />
+      <workItem from="1606672443881" duration="14728000" />
+      <workItem from="1607065766113" duration="650000" />
+      <workItem from="1607066803200" duration="1466000" />
+      <workItem from="1607475968595" duration="81000" />
+      <workItem from="1607476107016" duration="11583000" />
+      <workItem from="1607544089681" duration="593000" />
+      <workItem from="1607637240801" duration="6210000" />
+      <workItem from="1608065005910" duration="792000" />
+      <workItem from="1608080304857" duration="11482000" />
+      <workItem from="1608153974366" duration="11280000" />
+      <workItem from="1608254554035" duration="908000" />
+      <workItem from="1608355036077" duration="3926000" />
+      <workItem from="1608457783991" duration="586000" />
+      <workItem from="1608621762422" duration="155000" />
+      <workItem from="1608621992922" duration="333000" />
+      <workItem from="1609133451091" duration="62000" />
+      <workItem from="1609273267895" duration="1370000" />
+      <workItem from="1609651565310" duration="801000" />
+      <workItem from="1609752923530" duration="346000" />
+      <workItem from="1609753522505" duration="16022000" />
+      <workItem from="1609869385663" duration="155000" />
+      <workItem from="1609869611565" duration="2632000" />
+      <workItem from="1610664295213" duration="1247000" />
+      <workItem from="1610730907484" duration="728000" />
+      <workItem from="1610856788890" duration="3921000" />
+      <workItem from="1612400094651" duration="650000" />
+      <workItem from="1612400989106" duration="1007000" />
+      <workItem from="1612764322183" duration="70000" />
+      <workItem from="1612901639961" duration="620000" />
+      <workItem from="1612908122995" duration="36000" />
+      <workItem from="1613188489913" duration="99000" />
+      <workItem from="1613889914224" duration="146000" />
+      <workItem from="1613890127806" duration="6708000" />
+      <workItem from="1613977616000" duration="748000" />
+      <workItem from="1614097479036" duration="5684000" />
+      <workItem from="1614229072378" duration="591000" />
+      <workItem from="1614285384320" duration="1029000" />
+      <workItem from="1614547862217" duration="3153000" />
+      <workItem from="1614618265046" duration="4149000" />
+      <workItem from="1614625746866" duration="3908000" />
+      <workItem from="1614643936560" duration="10582000" />
+      <workItem from="1614705657796" duration="10789000" />
+      <workItem from="1614791135047" duration="7209000" />
+      <workItem from="1614834032396" duration="5073000" />
+      <workItem from="1615390508183" duration="705000" />
+      <workItem from="1615528543751" duration="60000" />
+      <workItem from="1615866513865" duration="1139000" />
+      <workItem from="1616258082507" duration="131000" />
+      <workItem from="1616953560810" duration="638000" />
+      <workItem from="1616965551749" duration="37000" />
+      <workItem from="1617163315450" duration="3220000" />
+      <workItem from="1617168224475" duration="6012000" />
+      <workItem from="1617247018833" duration="944000" />
+      <workItem from="1617386959256" duration="19952000" />
     </task>
     <task id="LOCAL-00001" summary="login con ajax">
       <created>1604772590258</created>
@@ -240,11 +338,30 @@
       <option name="project" value="LOCAL" />
       <updated>1606628714981</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="creacion de selet y tranajando en usuarios">
+      <created>1606629170215</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606629170215</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -257,91 +374,5 @@
     <MESSAGE value="creacion de selet y tranajando en usuarios" />
     <option name="LAST_COMMIT_MESSAGE" value="creacion de selet y tranajando en usuarios" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="434" y="188" key="#Notifications" timestamp="1604772314938">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="434" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1604772314938" />
-    <state x="390" y="7" key="#PHP" timestamp="1604767522078">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="390" y="7" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1604767522078" />
-    <state x="275" y="5" key="#Plugins" timestamp="1606327824354">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="5" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1606327824354" />
-    <state x="59" y="205" key="#SQL_Dialects" timestamp="1605992487242">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="59" y="205" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1605992487242" />
-    <state x="480" y="158" key="#Web_Browsers" timestamp="1605188842193">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="480" y="158" key="#Web_Browsers/0.0.1366.728@0.0.1366.728" timestamp="1605188842193" />
-    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606016089524">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606016089524" />
-    <state x="453" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604991366306">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="453" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1604991366306" />
-    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606327366540">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1606327366540" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1606628713564">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606628713564" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1605992826529">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605992826529" />
-    <state x="507" y="284" key="Github.CreateGistDialog" timestamp="1604772369557">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="507" y="284" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1604772369557" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606449063678">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606449063678" />
-    <state x="169" y="13" width="998" height="708" key="SettingsEditor" timestamp="1605188457993">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="169" y="13" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605188457993" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1605481968455">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1605481968455" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606628904195">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606628904195" />
-    <state x="500" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605080384369">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="500" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728@0.0.1366.728" timestamp="1605080384369" />
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605186107758">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1605186107758" />
-    <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606628890510">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606628890510" />
-    <state x="504" y="133" key="refactoring.ChangeSignatureDialog" timestamp="1606331961644">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="504" y="133" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1606331961644" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1606454596988">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606454596988" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606427989338">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606427989338" />
   </component>
 </project>

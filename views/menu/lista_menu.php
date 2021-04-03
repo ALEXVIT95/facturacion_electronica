@@ -249,11 +249,12 @@ include '../../template/header.php';
                      'Correcto!',
                      'Registro Modificado!',
                      'success'
+
                  );
                  //location.reload();
-                 window.location.reload(null, false);
-                 console.log(rsu.success)
 
+                 console.log(rsu.success)
+                 window.location.reload(null, false);
              } else {
                  console.log(rsu.mensaje)
              }
@@ -274,6 +275,7 @@ include '../../template/header.php';
                      'Correcto!',
                      'Registro Eliminado!',
                      'success'
+
                  );
                  window.location.reload(null, false);
              } else {

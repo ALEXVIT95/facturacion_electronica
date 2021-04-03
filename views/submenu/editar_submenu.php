@@ -39,7 +39,7 @@ $ob = new Conectar();
 
                             <select class="form-control " name="Ed_rol" id="Ed_rol">
 
-                                <option selected="" id="Ed_rol_val" value="">Seleccione una opcion</option>
+                                <option selected="" id="Ed_rol_val" value="0">Seleccione una opcion</option>
                                 <?php
                                 $conn = $ob->Conexion();
                                 $q = "SELECT RO_ID, RO_DESCRIPCION FROM tbl_rol";
@@ -65,8 +65,8 @@ $ob = new Conectar();
                             <label for="Edsestado">Estado</label>
                             <select id="Edsestado" name="Edsestado" class="form-control input">
                                 <option selected id="Ed_sestado_val"  value="" >Seleccione una opción</option>
-                                <option value="A">Activo</option>
-                                <option value="I">Inactivo</option>
+                                <option value="<span class='badge badge-success'><i class='fa fa-check'></i> Activo</span>">Activo</option>
+                                <option value="<span class='badge badge-danger'><i class='fa fa-stop-circle'></i> Inactivo</span>">Inactivo</option>
 
                             </select>
                         </div>
@@ -97,7 +97,7 @@ $ob = new Conectar();
                 data: {Ed_rol:Ed_rol},
                 dataType: 'html',
                 type: 'POST',
-                url: 'obtener_selectrol.php',
+                url: '../../controller/submenu/obtener_selectrol.php',
 
             }).done(function(data){
                 calle.html(data);

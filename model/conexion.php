@@ -3,7 +3,8 @@ class Conectar{
     protected $dbh;
     public $conexion;
 
-    Public function Conexion(){
+    Public function Conexion(): PDO
+    {
         define('servidor','localhost');
         define('nombre_bd','facelect');
         define('usuario','root');
@@ -12,11 +13,9 @@ class Conectar{
 
 
         try {
-            $conectar = $this->dbh = new PDO("mysql:host=".servidor.";dbname=".nombre_bd, usuario, password);
-
-            return $conectar;
+            return $this->dbh = new PDO("mysql:host=".servidor.";dbname=".nombre_bd, usuario, password);
         } catch (Exception $e) {
-            print "¡Error Mesa de Partes BD!: " . $e->getMessage() . "<br/>";
+            print "¡Error de conexion BD!: " . $e->getMessage() . "<br/>";
             die();
         }
     }
@@ -25,9 +24,5 @@ class Conectar{
         return $this->dbh->query("SET NAMES 'utf8'");
     }
 
-    public function desconectarDB()
-    {
-        die($this->dbh);
-    }
 }
 

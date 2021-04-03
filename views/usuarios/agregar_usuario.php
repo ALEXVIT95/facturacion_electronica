@@ -1,10 +1,9 @@
-
 <style>
     .subir{
         padding: 5px 10px;
-        background: #f55d3e;
+        background: #0C9A9A;
         color:#fff;
-        border:0px solid #fff;
+        border:0px solid #0d89ed;
     }
 
     .subir:hover{
@@ -12,6 +11,7 @@
         background: #f7cb15;
     }
 </style>
+
 <?php
 include_once '../../model/conexion.php';
 $ob = new Conectar();
@@ -26,7 +26,7 @@ $ob = new Conectar();
                 </button>
             </div>
             <div class="modal-body">
-                <form  novalidate enctype="multipart/form-data" id="formUsuario" method="POST" action="../../controller/usuario/crud_usuarioController.php">
+                <form  novalidate  enctype="multipart/form-data" id="formUsuario" method="POST" action="<?php echo SERVERURL ?>controller/usuario/crud_usuarioController.php">
                     <div class="form-row">
                         <input type="hidden" class="form-control"  id="idUsuario" name="idUsuario" >
 
@@ -98,19 +98,22 @@ $ob = new Conectar();
                                 <option value="I">Inactivo</option>
                             </select>
                         </div>
-
                         <div class="form-group col-md-6">
-                       <i class="form-control-file">    <label for="photo">Foto</label>
-                            <label for="photo" class="subir">
-                                <i class="fa fa-cloud-upload "></i> Subir Imagen
-                            </label></i>
-                            <input id="photo" name="photo" onchange='cambiar()' type="file" style='display: none;'/>
-                            <div class="form-control " name="photo" id="info"></div>
 
+                            <div class="profile_pic">
+                                <label for="Perfil">Perfil</label>
+                        <br>
+                        <label for="file" class="subir">
+                            <i class="fas fa-cloud-upload-alt"></i> Subir archivo
+                        </label>
+                        <input id="file" name="photo" onchange='cambiar()' type="file" style='display: none;'/>
+                        <div hidden id="info"></div>
+
+                            </div>
+                            <div class="form-group col-md-6"><img id="img" class="img-circle profile_img" src="../../archive/imgen/user.png" height="100" width="100"  "></div>
                     </div>
                     </div>
             </div>
-
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i> Cerrar</button>
@@ -119,10 +122,30 @@ $ob = new Conectar();
             </form>
         </div></div>
     </div>
-
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="<?php echo SERVERURL ?>resources/js/jquery-1.10.2.min.js"></script>
 <script>
+    function readURL(input) {
+        if (input.files && input.files[0]) { //Revisamos que el input tenga contenido
+            var reader = new FileReader(); //Leemos el contenido
+
+            reader.onload = function(e) { //Al cargar el contenido lo pasamos como atributo de la imagen de arriba
+                $('#img').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#file").change(function() { //Cuando el input cambie (se cargue un nuevo archivo) se va a ejecutar de nuevo el cambio de imagen y se verá reflejado.
+        readURL(this);
+    });
     function cambiar(){
         var pdrs = document.getElementById('photo').files[0].name;
         document.getElementById('info').innerHTML = pdrs;
-    }</script>
+    }
+</script>
+<script>
+
+</script>

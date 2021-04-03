@@ -1,0 +1,4 @@
+Options All -Indexes
+
+ErrorDocument 404 /facturacion-electronica/error/page_404.php
+ErrorDocument 403 /facturacion-electronica/error/page_403.php

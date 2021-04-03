@@ -15,6 +15,9 @@
         <link rel="icon" href="<?php echo SERVERURL ?>resources/img/logo.ico" type="img/ico"/>
 
         <title>Gentelella Alela! | </title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/css/bootstrap-select.min.css">
+
 
         <!-- Bootstrap -->
         <link href="<?php echo SERVERURL ?>resources/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +38,8 @@
         <!-- Custom Theme Style -->
         <link href="<?php echo SERVERURL ?>resources/build/css/custom.min.css" rel="stylesheet">
         <link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
+
+
     </head>
     <?php
 
@@ -166,7 +171,7 @@
                                                 class="fa fa-gear pull-right"></i> Ajustes</a>
 
 
-                                    <a class="dropdown-item" href="<?php echo SERVERURL ?>controller/logout.php"><i
+                                    <a class="dropdown-item" href="<?php echo SERVERURL ?>controller/login/logout.php"><i
                                                 class="fa fa-sign-out pull-right"></i>Cerrar Sesion</a>
                                 </div>
                             </li>

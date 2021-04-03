@@ -2,6 +2,7 @@
 include_once '../../model/conexion.php';
 $ob = new Conectar();
 ?>
+
 <div class="modal fade" id="EditarMenuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -37,7 +38,7 @@ $ob = new Conectar();
 
                             <label for="Ed_rol">Rol</label>
 
-                            <select class="form-control " name="Ed_rol" id="Ed_rol">
+                            <select class="form-control selectpicker" data-live-search="true"  name="Ed_rol" id="Ed_rol">
 
                                 <option selected="" id="Ed_rol_val" value="">Seleccione una opcion</option>
                                 <?php
@@ -61,8 +62,8 @@ $ob = new Conectar();
                             <label for="Eestado">Estado</label>
                             <select id="Eestado" name="Eestado" class="form-control " >
                                 <option selected id="E_t_estado_val" >Seleccione una opción</option>
-                                <option value="A">Activo</option>
-                                <option value="I">Inactivo</option>
+                                <option value="<span class='badge badge-success'><i class='fa fa-check'></i> Activo</span>">Activo</option>
+                                <option value="<span class='badge badge-danger'><i class='fa fa-stop-circle'></i> Inactivo</span>">Inactivo</option>
 
                             </select>
                         </div>

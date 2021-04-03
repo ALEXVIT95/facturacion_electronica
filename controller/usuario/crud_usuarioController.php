@@ -11,6 +11,8 @@ if ($_POST) {
     //tambien puedes poner esta validacion, que indica que debe existe el la variable si o si
     if (isset($_POST['accion'])) {
         if ($_POST['accion'] == "insertar") {
+            $imagen = ($_FILES['file']['tmp_name']);
+            $avatar = fopen($imagen, 'rb');
             $nombres = $_POST['nombres'];
             $apellidos= $_POST['apellidos'];
             $usuario = $_POST['usuario'];
@@ -22,53 +24,28 @@ if ($_POST) {
             $borrado = '0';
             $cs_registro =  date('Y-m-d');
             $pass = md5($clave);
-            $photo = $_FILES['photo']['name'];
-            $tmp_dir = $_FILES['photo']['tmp_name'];
-            $imgSize = $_FILES['photo']['size'];
+            $photo = $avatar;
 
-            if(empty($photo)){
-                $errMSG = "Seleccione el archivo de imagen.";
-            }
-            else {
-                $upload_dir = '../../archive/imgen/'; // upload directory
 
-                $imgExt = strtolower(pathinfo($photo, PATHINFO_EXTENSION)); // get image extension
 
-                // valid image extensions
-                $valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); // valid extensions
-
-                // rename uploading image
-                $userpic = rand(1000, 1000000) . "." . $imgExt;
-
-                // allow valid image file formats
-                if (in_array($imgExt, $valid_extensions)) {
-                    // Check file size '1MB'
-                    if ($imgSize < 1000000) {
-                        move_uploaded_file($tmp_dir, $upload_dir . $userpic);
-                    } else {
-                        $errMSG = "Su archivo es muy grande.";
-                    }
-                } else {
-                    $errMSG = "Solo archivos JPG, JPEG, PNG & GIF son permitidos.";
-                }
-            }
-            $sql = "INSERT INTO tbl_usuario (RO_ID,USU_NOMBRES,USU_APELLIDOS,USU_USUARIO,USU_CORREO,USU_CLAVE,USU_TELEFONO,USU_IMAGEN,USU_ESTADO,USU_F_CREACION,USU_BORRADO) VALUES (:rol,:nombres,:apellidos,:usuario,:correo,:pass,:telefono,:photo,:estado,:cs_registro,:borrado)";
+            $sql = "INSERT INTO tbl_usuario (RO_ID,USU_NOMBRES,USU_APELLIDOS,USU_USUARIO,USU_CORREO,USU_CLAVE,USU_TELEFONO,USU_IMAGEN,USU_ESTADO,USU_F_CREACION,USU_BORRADO) VALUES (:rol,:nombres,:apellidos,:usuario,:correo,:clave,:telef,:photo,:estado,:cs_registro,:borrado)";
             $query = $pdo->prepare($sql);
             //BINDPARAM Vincula un parámetro al nombre de variable especificado
             $query->bindParam(':rol', $rol, PDO::PARAM_INT);
-            $query->bindParam(':nombres', $nombres, PDO::PARAM_STR);
-            $query->bindParam(':apellidos', $apellidos, PDO::PARAM_STR);
-            $query->bindParam(':usuario', $usuario, PDO::PARAM_STR);
-            $query->bindParam(':correo', $correo, PDO::PARAM_STR);
-            $query->bindParam(':clave', $clave, PDO::PARAM_STR);
-            $query->bindParam(':telef', $telefono, PDO::PARAM_STR);
-            $query->bindParam(':photo', $photo, PDO::PARAM_STR);
+            $query->bindParam(':nombres', $nombres, PDO::PARAM_STMT);
+            $query->bindParam(':apellidos', $apellidos, PDO::PARAM_STMT);
+            $query->bindParam(':usuario', $usuario, PDO::PARAM_STMT);
+            $query->bindParam(':correo', $correo, PDO::PARAM_STMT);
+            $query->bindParam(':clave', $pass, PDO::PARAM_STMT);
+            $query->bindParam(':telef', $telefono, PDO::PARAM_STR_CHAR);
+            $query->bindParam(':photo', $photo, PDO::PARAM_STMT);
             $query->bindParam(':estado', $estado, PDO::PARAM_STR_CHAR);
-            $query->bindParam(':borrado', $borrado, PDO::PARAM_INT);
             $query->bindParam(':cs_registro', $cs_registro, PDO::PARAM_STMT);
-            $rsu = $query->execute();
+            $query->bindParam(':borrado', $borrado, PDO::PARAM_INT);
 
-            if ($rsu) {
+            $rs = $query->execute();
+
+            if ($rs) {
                 $response["success"] = true;
                 $response["mensaje"] = "Se inserto correctamente";
             } else {
@@ -147,4 +124,6 @@ if ($_POST) {
 
     }
 }
+
+
 

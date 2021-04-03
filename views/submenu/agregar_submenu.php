@@ -1,5 +1,6 @@
 <?php
 include_once '../../model/conexion.php';
+error_reporting(0);
 $ob = new Conectar();
 ?>
 <div class="modal fade" id="AgregarsubMenuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -35,7 +36,7 @@ $ob = new Conectar();
                             <label for="id_rol">Rol</label>
 
                             <select class="form-control"  id="id_rol" name="rol" required="">
-                                <option selected  id="id_rol" value="" >Seleccione una opcion</option>
+                                <option selected  id="id_rol" value="0" >Seleccione una opcion</option>
                                 <?php
 
                                 $conn = $ob->Conexion();
@@ -54,7 +55,7 @@ $ob = new Conectar();
                         <div class="form-group col-md-6">
                             <label for="menu">Menu</label>
                             <select id="menu" name="menu" class="form-control input">
-                                <option selected  id="menu" value="" >Seleccione una opcion</option>
+                                <option selected  id="menu" value="0" >Seleccione una opcion</option>
 
 
                             </select>
@@ -62,7 +63,7 @@ $ob = new Conectar();
                         <div class="form-group col-md-6">
                             <label for="sestado">Estado</label>
                             <select id="sestado" name="sestado" class="form-control input">
-                                <option selected id="E_estado"  value="" >Seleccione una opción</option>
+                                <option selected id="E_estado"  value="0" >Seleccione una opción</option>
                                 <option value="A">Activo</option>
                                 <option value="I">Inactivo</option>
 
@@ -72,7 +73,7 @@ $ob = new Conectar();
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i> Cerrar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"  ></i> Cerrar</button>
                 <button type="button" class="btn btn-primary" name="btnGuardarsubMenu" id="btnGuardarsubMenu"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
             </div>
             </form>
@@ -93,7 +94,7 @@ $ob = new Conectar();
                 data: {id_rol:id_rol},
                 dataType: 'html',
                 type: 'POST',
-                url: 'obtener_selectrol.php',
+                url: '../../controller/submenu/obtener_selectrol.php',
 
             }).done(function(data){
                 calle.html(data);
@@ -102,4 +103,6 @@ $ob = new Conectar();
         });
 
     });
+
+
 </script>
