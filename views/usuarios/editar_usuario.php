@@ -1,60 +1,59 @@
-
 <?php
 include_once '../../model/conexion.php';
 $ob = new Conectar();
 ?>
-<div class="modal fade" id="AgregarUsuarioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="EditarUsuarioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-user" aria-hidden="true"></i> &nbsp; Agregar Usuario</h5>
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-user" aria-hidden="true"></i> &nbsp; Editar Usuario</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form  novalidate  enctype="multipart/form-data" id="formUsuario" method="POST" action="<?php echo SERVERURL ?>controller/usuario/crud_usuarioController.php">
+                <form  novalidate  enctype="multipart/form-data" id="formEditarUsuario" method="POST" action="<?php echo SERVERURL ?>controller/usuario/crud_usuarioController.php">
                     <div class="form-row">
-                        <input type="hidden" class="form-control"  id="idUsuario" name="idUsuario" >
+                        <input type="hidden" class="form-control"  id="edidUsuario" name="edidUsuario" >
 
                         <div class="form-group col-md-6">
-                            <label for="nombres">Nombres</label>
-                            <input type="text" class="form-control nombres input" id="nombres" name="nombres" placeholder="Ej: Juan " required>
+                            <label for="ednombres">Nombres</label>
+                            <input type="text" class="form-control ednombres input" id="ednombres" name="ednombres" placeholder="Ej: Juan " required>
 
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="apellidos">Apellidos</label>
-                            <input type="text" class="form-control apellidos input" id="apellidos" name="apellidos" placeholder="Ej: Castro" required>
+                            <label for="edapellidos">Apellidos</label>
+                            <input type="text" class="form-control edapellidos input" id="edapellidos" name="edapellidos" placeholder="Ej: Castro" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="usuario">Usuario</label>
-                            <input type="text" class="form-control input" id="usuario" name="usuario" placeholder="Ej: Juan123" required>
+                            <label for="edusuario">Usuario</label>
+                            <input type="text" class="form-control edusuario input" id="edusuario" name="edusuario" placeholder="Ej: Juan123" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="correo">Correo Electrónico</label>
-                            <input type="email" class="form-control input" id="correo" name="correo" placeholder="Ej: ejempo@gmail.com" required>
+                            <label for="edcorreo">Correo Electrónico</label>
+                            <input type="email" class="form-control edcorreo input" id="edcorreo" name="edcorreo" placeholder="Ej: ejempo@gmail.com" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="clave">Contraseña</label>
-                            <input type="password" class="form-control input" id="clave" name="clave"  required>
+                            <label for="edclave">Contraseña</label>
+                            <input type="password" class="form-control edclave input" id="edclave" name="edclave"  required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="confirmarClave">Confirmar Contraseña</label>
-                            <input type="password" class="form-control input" id="confirmarClave" name="confirmarClave"  required>
+                            <label for="edconfirmarClave">Confirmar Contraseña</label>
+                            <input type="password" class="form-control edconfirmarClave input" id="edconfirmarClave" name="edconfirmarClave"  required>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
 
-                            <label for="rol">Rol</label>
+                            <label for="edrol">Rol</label>
 
-                            <select class="form-control"  id="rol" name="rol">
-                                <option selected  id="Rol_val" value="" >Seleccione una opcion</option>
+                            <select class="form-control"  id="edrol" name="edrol">
+                                <option selected  id="edRol_val" value="" >Seleccione una opcion</option>
                                 <?php
                                 $conn = $ob->Conexion();
                                 $q = "SELECT * FROM tbl_rol WHERE RO_BORRADO = '0' AND RO_ESTADO ='A'";
@@ -68,8 +67,8 @@ $ob = new Conectar();
                             </select>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="telef">Teléfono</label>
-                            <input type="number" class="form-control" maxlength="11" id="telef" name="telef" placeholder="Ej: 0984575858" required>
+                            <label for="edtelef">Teléfono</label>
+                            <input type="number" class="form-control" maxlength="11" id="edtelef" name="edtelef" placeholder="Ej: 0984575858" required>
                         </div>
 
 
@@ -78,9 +77,9 @@ $ob = new Conectar();
                     <div class="form-row">
 
                         <div class="form-group col-md-6">
-                            <label for="estado">Estado</label>
-                            <select id="estado" name="estado" class="form-control input">
-                                <option selected id="Estado_val"  value="" >Seleccione una opción</option>
+                            <label for="edestado">Estado</label>
+                            <select id="edestado" name="edestado" class="form-control input">
+                                <option selected id="edEstado_val"  value="" >Seleccione una opción</option>
                                 <option value="A">Activo</option>
                                 <option value="I">Inactivo</option>
                             </select>
@@ -92,11 +91,11 @@ $ob = new Conectar();
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i> Cerrar</button>
-                <button type="button" class="btn btn-primary" name="btnGuardarUsuario" id="btnGuardarUsuario"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+                <button type="button" class="btn btn-primary" name="btnEditarUsuario" id="btnEditarUsuario"><i class="fa fa-floppy-o" aria-hidden="true"></i> Editar</button>
             </div>
             </form>
         </div></div>
-    </div>
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="<?php echo SERVERURL ?>resources/js/jquery-1.10.2.min.js"></script>

@@ -2,36 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4130c385-2e75-4e94-96e9-e2c716e90be3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/producto/crud_productoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/producto/listar_productoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login/codigo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/productos/agregar_productos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/productos/detalle_productos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/productos/editar_productos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/productos/eliminar_productos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/productos/lista_productos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/facturacion-electronica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/facturacion-electronica.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/servicio/crud_servicioController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/servicio/listar_servicioController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/servicios/agregar_servicio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/servicios/editar_servicio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/servicios/eliminar_servicio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/servicios/lista_servicios.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/usuarios/editar_usuario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/usuarios/eliminar_usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/menu/crud_menuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/menu/crud_menuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/menu/lista_menuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/menu/lista_menuController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/usuario/crud_usuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/usuario/crud_usuarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/configuracion.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/configuracion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error/page_404.php" beforeDir="false" afterPath="$PROJECT_DIR$/error/page_404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/conexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/conn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ajax/codigo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login/loginviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/loginviews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/editar_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/editar_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/lista_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/lista_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/submenu/agregar_submenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/submenu/agregar_submenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/submenu/editar_submenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/submenu/editar_submenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/submenu/obtener_selectrol.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/submenu/obtener_selectrol.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/usuarios/agregar_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/usuarios/agregar_usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/usuarios/lista_usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/usuarios/lista_usuarios.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +62,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/productos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/controller/servicio" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -94,11 +78,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\facturacion-electronica\controller\servicio" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\views\productos" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\controller\producto" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\controller" />
       <recent name="C:\xampp\htdocs\facturacion-electronica\controller\submenu" />
-      <recent name="C:\xampp\htdocs\facturacion-electronica\resources\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\facturacion-electronica\views\login" />
@@ -224,7 +208,30 @@
       <workItem from="1617163315450" duration="3220000" />
       <workItem from="1617168224475" duration="6012000" />
       <workItem from="1617247018833" duration="944000" />
-      <workItem from="1617386959256" duration="19952000" />
+      <workItem from="1617386959256" duration="21204000" />
+      <workItem from="1617680182293" duration="2612000" />
+      <workItem from="1617774227656" duration="96000" />
+      <workItem from="1617774413109" duration="40000" />
+      <workItem from="1617855310107" duration="829000" />
+      <workItem from="1618457734193" duration="1137000" />
+      <workItem from="1618464527741" duration="1040000" />
+      <workItem from="1618547854681" duration="546000" />
+      <workItem from="1618549313087" duration="8000" />
+      <workItem from="1618553524820" duration="245000" />
+      <workItem from="1618799609017" duration="791000" />
+      <workItem from="1618804253153" duration="1093000" />
+      <workItem from="1620505348092" duration="1021000" />
+      <workItem from="1620510719737" duration="370000" />
+      <workItem from="1621433055528" duration="44000" />
+      <workItem from="1621433165211" duration="9532000" />
+      <workItem from="1621526314214" duration="536000" />
+      <workItem from="1622262635813" duration="1050000" />
+      <workItem from="1622266259840" duration="563000" />
+      <workItem from="1622480874456" duration="47000" />
+      <workItem from="1622481003134" duration="5515000" />
+      <workItem from="1622662500527" duration="526000" />
+      <workItem from="1622663278333" duration="1821000" />
+      <workItem from="1622727892095" duration="10626000" />
     </task>
     <task id="LOCAL-00001" summary="login con ajax">
       <created>1604772590258</created>
@@ -345,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606629170215</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="creacion de selet y tranajando en usuarios">
+      <created>1617415640648</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617415640648</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

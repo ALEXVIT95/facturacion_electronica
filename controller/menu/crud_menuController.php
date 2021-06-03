@@ -81,7 +81,9 @@ if ($_POST) {
         } elseif ($_POST['accion'] == "eliminar") {
 
             $codigo = $_POST['idMenuEl'];
-            $sqle = "UPDATE tbl_menu SET ME_BORRADO = '1' where ME_ID = '$codigo'";
+
+
+            $sqle = "UPDATE tbl_menu SET ME_BORRADO = '1' where ME_ID = '$codigo' and ";
             $querye = $pdo->prepare($sqle);
             $rse = $querye->execute();
 

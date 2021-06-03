@@ -11,10 +11,9 @@ if ($_POST) {
     //tambien puedes poner esta validacion, que indica que debe existe el la variable si o si
     if (isset($_POST['accion'])) {
         if ($_POST['accion'] == "insertar") {
-            $imagen = ($_FILES['file']['tmp_name']);
-            $avatar = fopen($imagen, 'rb');
+            $photo = '../../archive/imgen/user.png';
             $nombres = $_POST['nombres'];
-            $apellidos= $_POST['apellidos'];
+            $apellidos = $_POST['apellidos'];
             $usuario = $_POST['usuario'];
             $correo = $_POST['correo'];
             $clave = $_POST['clave'];
@@ -22,10 +21,8 @@ if ($_POST) {
             $telefono = $_POST['telef'];
             $estado = $_POST['estado'];
             $borrado = '0';
-            $cs_registro =  date('Y-m-d');
+            $cs_registro = date('Y-m-d');
             $pass = md5($clave);
-            $photo = $avatar;
-
 
 
             $sql = "INSERT INTO tbl_usuario (RO_ID,USU_NOMBRES,USU_APELLIDOS,USU_USUARIO,USU_CORREO,USU_CLAVE,USU_TELEFONO,USU_IMAGEN,USU_ESTADO,USU_F_CREACION,USU_BORRADO) VALUES (:rol,:nombres,:apellidos,:usuario,:correo,:clave,:telef,:photo,:estado,:cs_registro,:borrado)";
@@ -54,27 +51,34 @@ if ($_POST) {
             }
             echo json_encode($response);
             exit;
-        /*} elseif ($_POST['accion'] == "actualizar") {
+        }elseif ($_POST['accion'] == "actualizar") {
 
-            $codigo = $_POST['EidsubMenu'];
-            $menu = $_POST['Ed_menu'];
-            $snombres = $_POST['Esnombres'];
-            $sestado = $_POST['Edsestado'];
-            $surl = $_POST['Esurl'];
-            if ( $sestado = $_POST['Edsestado'] == "<span class='badge badge-success'><i class='fa fa-check'></i> Activo</span>") {
+            $codigo = $_POST['edidUsuario'];
+            $ednombres = $_POST['ednombres'];
+            $edapellido = $_POST['edapellidos'];
+            $edusuario = $_POST['edusuario'];
+            $edcorreo = $_POST['edcorreo'];
+            $edclave = $_POST['edclave'];
+            $edrol = $_POST['edrol'];
+            $edestado = $_POST['edestado'];
+            if ( $edestado = $_POST['edestado'] == "<span class='badge badge-success'><i class='fa fa-check'></i> Activo</span>") {
 
-                $sestado = $_POST['Edsestado'] = 'A';
-            }elseif ($sestado = $_POST['Edsestado'] == "<span class='badge badge-danger'><i class='fa fa-stop-circle'></i> Inactivo</span>"){
-                $sestado = $_POST['Edsestado'] = 'I';
+                $edestado = $_POST['edestado'] = 'A';
+            }elseif ($edestado = $_POST['edestado'] == "<span class='badge badge-danger'><i class='fa fa-stop-circle'></i> Inactivo</span>"){
+                $edestado = $_POST['edestado'] = 'I';
             }
 
-            // "UPDATE tbl_medico SET ESP_ID = '$especialidad', MED_NOMBRES = '$nombres', MED_P_APELLIDO = '$P_Apellido', MED_S_APELLIDO = ' $S_Apellido', MED_GENERO = '$genero', MED_FECHA_NAC = '$f_naci', MED_DIRECCION = '$dir',  MED_CORREO = '$correo', MED_TELEFONO = '$telef', MED_TIPO_DNI = ' $t_dni', MED_DNI = ' $dni' WHERE MED_ID = '$codigo'
-            $sqlu = "UPDATE tbl_sub_menu SET ME_ID = :menu, SUB_DESCRIPCION = :snombres, SUB_URL = :surl, SUB_ESTADO= :sestado WHERE SUB_ID = '$codigo' ";
+
+            $sqlu = "UPDATE tbl_usuario SET USU_NOMBRES = :ednombres, USU_APELLIDOS = :edapellidos, USU_USUARIO = :edusuario, USU_CORREO = :edcorreo, USU_CLAVE = :edclave, RO_ID  = :edrol, USU_ESTADO= :edestado WHERE USU_ID = '$codigo' ";
             $queryu = $pdo->prepare($sqlu);
-            $queryu->bindParam(':menu', $menu, PDO::PARAM_INT);
-            $queryu->bindParam(':snombres', $snombres, PDO::PARAM_STR);
-            $queryu->bindParam(':sestado', $sestado, PDO::PARAM_STR_CHAR);
-            $queryu->bindParam(':surl', $surl, PDO::PARAM_STR);
+            $queryu->bindParam(':ednombres', $ednombres, PDO::PARAM_STMT);
+            $queryu->bindParam(':edapellidos', $edapellido, PDO::PARAM_STMT);
+            $queryu->bindParam(':edusuario', $edusuario, PDO::PARAM_STMT);
+            $queryu->bindParam(':edcorreo', $edcorreo, PDO::PARAM_STMT);
+            $queryu->bindParam(':edclave', $edclave, PDO::PARAM_STMT);
+            $queryu->bindParam(':edrol', $edrol, PDO::PARAM_INT);
+            $queryu->bindParam(':edestado', $edestado, PDO::PARAM_STR_CHAR);
+
 
 
 
@@ -93,8 +97,8 @@ if ($_POST) {
             exit;
         } elseif ($_POST['accion'] == "eliminar") {
 
-            $codigo = $_POST['idsubMenuEl'];
-            $sqle = "UPDATE tbl_sub_menu SET SUB_BORRADO = '1' where SUB_ID = '$codigo'";
+            $codigo = $_POST['idUsuarioEl'];
+            $sqle = "UPDATE tbl_usuario  SET USU_BORRADO = '1' where USU_ID = '$codigo'";
             $querye = $pdo->prepare($sqle);
             $rse = $querye->execute();
 
@@ -110,7 +114,7 @@ if ($_POST) {
                 $response["exe"] = $rse;
             }
             echo json_encode($response);
-            exit;*/
+            exit;
 
 
         } else {
@@ -124,6 +128,7 @@ if ($_POST) {
 
     }
 }
+
 
 
 
